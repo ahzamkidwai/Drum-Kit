@@ -1,41 +1,51 @@
-.crash {
-    position: relative;
-    left: 20px;
+*{
+    background-color: black;
 }
 
-.snare {
+#crash {
+    position: relative;
+    left: 20px;
+    cursor: pointer;
+}
+
+#snare {
     position: relative;
     bottom: 183px;
     left: 200px;
+    cursor: pointer;
 }
 
-.kick {
+#kick {
     position: relative;
     bottom: 420px;
     left: 340px;
+    cursor: pointer;
 }
 
-.tom1 {
+#tom1 {
     position: relative;
     bottom: 820px;
     left: 210px;
+    cursor: pointer;
 }
 
-.tom2 {
+#tom2 {
     position: relative;
     bottom: 970px;
     left: 570px;
+    cursor: pointer;
 }
 
-.tom3{
+#tom3{
     position: relative;
     bottom: 950px;
     left: 630px;
+    cursor: pointer;
 }
 
-.tom4{
+#tom4{
     position: relative;
     bottom: 1250px;
     left: 790px;
+    cursor: pointer;
 }
-

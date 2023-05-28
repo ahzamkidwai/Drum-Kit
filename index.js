@@ -1,12 +1,21 @@
-let number = document.querySelectorAll("drum").length;
-console.log(number);
+const getNumber = () => {
+  let number = document.querySelectorAll(".drum").length;
+  console.log(number);
+  return number;
+};
 
-for (let i = 0; i < number; i++) {
-  document.querySelectorAll("drum")[i].addEventListener("click", soundfunc());
-}
+const attachEvent = () => {
+  let number = getNumber();
+  for (let i = 0; i < number; i++) {
+    document.querySelectorAll(".drum")[i].addEventListener("click", (event) => {
+      soundfunc(event);
+    });
+  }
+};
 
-function soundfunc() {
-  let ID = document.getElementById("#drum").className;
+function soundfunc(event) {
+  let ID = event.target.id;
+  console.log(ID);
   switch (ID) {
     case "crash":
       var audio = new Audio("sounds/crash.mp3");
@@ -17,23 +26,23 @@ function soundfunc() {
       audio.play();
       break;
     case "kick":
-      var audio = new Audio("sounds/kick.mp3");
+      var audio = new Audio("sounds/kick-bass.mp3");
       audio.play();
       break;
     case "tom1":
-      var audio = new Audio("sounds/tom1.mp3");
+      var audio = new Audio("sounds/tom-1.mp3");
       audio.play();
       break;
     case "tom2":
-      var audio = new Audio("sounds/tom2.mp3");
+      var audio = new Audio("sounds/tom-2.mp3");
       audio.play();
       break;
     case "tom3":
-      var audio = new Audio("sounds/tom3.mp3");
+      var audio = new Audio("sounds/tom-3.mp3");
       audio.play();
       break;
     case "tom4":
-      var audio = new Audio("sounds/tom4.mp3");
+      var audio = new Audio("sounds/tom-4.mp3");
       audio.play();
       break;
     default:
@@ -41,3 +50,5 @@ function soundfunc() {
       break;
   }
 }
+
+attachEvent();
