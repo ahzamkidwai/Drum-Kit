@@ -1,39 +1,39 @@
-.crash {
+#crash {
     position: relative;
     left: 20px;
 }
 
-.snare {
+#snare {
     position: relative;
     bottom: 183px;
     left: 200px;
 }
 
-.kick {
+#kick {
     position: relative;
     bottom: 420px;
     left: 340px;
 }
 
-.tom1 {
+#tom1 {
     position: relative;
     bottom: 820px;
     left: 210px;
 }
 
-.tom2 {
+#tom2 {
     position: relative;
     bottom: 970px;
     left: 570px;
 }
 
-.tom3{
+#tom3{
     position: relative;
     bottom: 950px;
     left: 630px;
 }
 
-.tom4{
+#tom4{
     position: relative;
     bottom: 1250px;
     left: 790px;
