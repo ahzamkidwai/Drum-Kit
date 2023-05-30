@@ -92,7 +92,6 @@ function soundfunc2(key) {
 
 document.addEventListener("keypress", function (event) {
   let keyy = event.keyCode;
-  alert(event.key);
   keyy = event.key;
   console.log(keyy);
   soundfunc2(keyy);
