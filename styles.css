@@ -1,4 +1,4 @@
-*{
+* {
     background-color: black;
 }
 
@@ -36,14 +36,14 @@
     cursor: pointer;
 }
 
-#tom3{
+#tom3 {
     position: relative;
     bottom: 950px;
     left: 630px;
     cursor: pointer;
 }
 
-#tom4{
+#tom4 {
     position: relative;
     bottom: 1250px;
     left: 790px;
